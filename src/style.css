@@ -1,0 +1,135 @@
+:root{
+  --primary-color:#9EC91E;
+  --secondary-color:#F2C244;
+  --primary-font:"Press Start 2P", serif;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-y: hidden;
+  font-family: var(--primary-font);
+} 
+
+.parent-container{
+ min-height: 100vh;
+  width: 100%;
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: center;
+}
+.game-interface-container{
+  width: 40rem;
+  height: auto;
+  /* border: 2px solid green; */
+  display: flex;
+  flex-direction: column;
+
+}
+.top-content{
+  height: 15rem;
+  width: 100%;
+  background-color: var(--primary-color);
+}
+.top-text-container{
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+}
+.top-text-container p{
+  font-size: 0.8rem;
+}
+.top-text-container a{
+  font-size: 0.8rem;
+}
+.header-text{
+display: flex;
+gap: 1rem;
+}
+.results{
+  display: flex;
+  gap: 1rem;
+}
+.center-heading h1{
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 200;
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--secondary-color);
+  
+}
+.computer-display-container{
+  width: 100%;
+  height: 12rem;
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: center;
+}
+.computer-display-container p{
+  text-align: center;
+}
+.emoji-div{
+  height: 8rem;
+  width: 8rem;
+  margin-top: 0.2rem;
+  border: dotted;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 2px solid red; */
+}
+.emoji{
+  font-size: 5rem;
+  cursor: pointer;
+}
+
+.computer-display-container .player-display-container{
+height: 15rem;
+}
+.bottom-content{
+  height: auto;
+  width: 100%;
+  background-color: var(--primary-color);
+ 
+}
+.emoji-selection{
+  height: 10rem;
+  width: 100%;
+
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 1rem;
+
+}
+.emoji1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 6rem;
+  height: 7rem;
+  background-color: #ffff;
+  border-radius: 1rem;
+  font-size: 4rem;
+
+
+}
+.emoji1 p{
+  font-size: 0.8rem;
+  padding-bottom: 0.5rem;
+}
+#scissors{
+  width: 7rem;
+}
+.player-display-container{
+  display: flex;
+  justify-content: center;
+}
+.player-display p{
+  padding-top: 0.3rem;
+}
